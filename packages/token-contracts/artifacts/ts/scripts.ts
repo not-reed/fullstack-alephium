@@ -3,17 +3,17 @@
 /* eslint-disable */
 
 import {
-	Address,
-	ExecutableScript,
-	ExecuteScriptParams,
-	ExecuteScriptResult,
-	Script,
-	SignerProvider,
-	type HexString,
+  Address,
+  ExecutableScript,
+  ExecuteScriptParams,
+  ExecuteScriptResult,
+  Script,
+  SignerProvider,
+  HexString,
 } from "@alephium/web3";
 import { default as WithdrawScriptJson } from "../scripts/Withdraw.ral.json";
 
 export const Withdraw = new ExecutableScript<{
-	token: HexString;
-	amount: bigint;
+  token: HexString;
+  amount: bigint;
 }>(Script.fromJson(WithdrawScriptJson, ""));

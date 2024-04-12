@@ -1,5 +1,5 @@
 import type { Deployer, DeployFunction, Network } from "@repo/web3/cli";
-import { stringToHex } from "@repo/web3";
+import { stringToHex } from "@alephium/web3";
 import type { Settings } from "../alephium.config";
 import { TokenFaucet } from "../artifacts/ts";
 

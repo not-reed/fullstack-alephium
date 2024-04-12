@@ -5,7 +5,7 @@ import {
 	addressFromContractId,
 	type AssetOutput,
 	DUST_AMOUNT,
-} from "@repo/web3";
+} from "@alephium/web3";
 import {
 	expectAssertionError,
 	randomContractId,
@@ -122,7 +122,7 @@ describe("unit tests", () => {
 	});
 
 	it("test withdraw", async () => {
-		const testParams = { ...testParamsFixture, testArgs: { amount: 3n } };
+		const testParams = { ...testParamsFixture, testArgs: { amount: 103n } };
 		// test that assertion failed in the withdraw function
 		await expectAssertionError(
 			TokenFaucet.tests.withdraw(testParams),
