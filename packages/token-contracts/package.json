@@ -1,0 +1,22 @@
+{
+	"name": "@repo/token-contracts",
+	"type": "module",
+	"main": "./index.ts",
+	"module": "./index.ts",
+	"export": {
+		"./": "./index.ts"
+	},
+	"scripts": {
+		"cli": "bun ../web3/bin/cli.ts",
+		"compile": "bun cli compile",
+		"deploy": "bun cli deploy",
+		"test": "bun test"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"@repo/web3": "workspace:*"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	}
+}
